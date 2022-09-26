@@ -1,19 +1,7 @@
 import * as process from "process";
 import { program } from "commander";
-
-const defaultOptions = {
-  ignore: "node_modules",
-  ext: ".vue,.js,.tsx,.ts",
-  fix: false,
-  target: "",
-  visible: true
-};
-type IDefaultOptions = typeof defaultOptions;
-
-type IResultOptions = Omit<IDefaultOptions, "ignore" | "ext"> & {
-  ignore: string[];
-  ext: string[];
-};
+import { IDefaultOptions, IResultOptions } from "../types";
+import { defaultOptions } from "../utils";
 
 /**
  * @author lihh

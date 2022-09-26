@@ -1,5 +1,7 @@
 import { useOption } from "./hooks/useOption";
+import { logger } from "./utils";
 
 (async function () {
-  await useOption();
+  const options = await useOption();
+  logger(options.visible);
 })();
