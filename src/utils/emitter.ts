@@ -1,6 +1,10 @@
 import { EmitterTypes, INormalFn } from "../types";
 
-const pool: Record<EmitterTypes, INormalFn[]> = { [EmitterTypes.LOGGER]: [] };
+const pool: Record<EmitterTypes, INormalFn[]> = {
+  [EmitterTypes.INFO]: [],
+  [EmitterTypes.ERROR]: [],
+  [EmitterTypes.SUCCESS]: []
+};
 
 const on = (keyName: EmitterTypes, fn: INormalFn) => {
   const fns = pool[keyName] || (pool[keyName] = []);

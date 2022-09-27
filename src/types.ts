@@ -7,7 +7,7 @@ export interface IDefaultOptions {
 }
 
 export interface INormalFn {
-  (...args: unknown[]): unknown;
+  (...args: any[]): any;
 }
 
 export type IResultOptions = Omit<IDefaultOptions, "ignore" | "ext"> & {
@@ -16,5 +16,7 @@ export type IResultOptions = Omit<IDefaultOptions, "ignore" | "ext"> & {
 };
 
 export enum EmitterTypes {
-  LOGGER = "LOGGER"
+  INFO = "INFO",
+  ERROR = "ERROR",
+  SUCCESS = "SUCCESS"
 }
