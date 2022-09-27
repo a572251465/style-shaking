@@ -11,6 +11,7 @@ specifiers:
   '@types/node': ^18.7.21
   '@typescript-eslint/eslint-plugin': ^5.38.0
   '@typescript-eslint/parser': ^5.38.0
+  colors: ^1.4.0
   commander: ^9.4.0
   eslint: ^8.24.0
   eslint-plugin-prettier: ^4.2.1
@@ -22,6 +23,7 @@ specifiers:
   typescript: ^4.8.3
 
 dependencies:
+  colors: 1.4.0
   commander: 9.4.0
   fs-extra: 10.1.0
 
@@ -1918,6 +1920,11 @@ packages:
   /color-name/1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
     dev: true
+
+  /colors/1.4.0:
+    resolution: {integrity: sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==}
+    engines: {node: '>=0.1.90'}
+    dev: false
 
   /commander/9.4.0:
     resolution: {integrity: sha512-sRPT+umqkz90UA8M1yqYfnHlZA7fF6nSphDtxeywPZ49ysjxDQybzk13CL+mXekDRG92skbcqCLVovuCusNmFw==}

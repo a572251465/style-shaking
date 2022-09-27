@@ -10,7 +10,7 @@ const on = (keyName: EmitterTypes, fn: INormalFn) => {
 };
 const emit = (keyName: EmitterTypes, ...args: any[]) => {
   const fns = pool[keyName] || (pool[keyName] = []);
-  if (fns.length !== 0) return;
+  if (fns.length === 0) return;
 
   fns.forEach((fn) => fn(...args));
 };
